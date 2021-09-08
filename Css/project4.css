@@ -1,0 +1,104 @@
+* {
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+:root {
+    --main-color: #142045; 
+}
+body {
+    font-family: system-ui;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color:#c0cae5c4;
+}
+.container {
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.container .main-img {
+    width: 350px;
+}
+.container h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px auto 20px;
+    color: var(--main-color);
+}
+.container p {
+    margin: 10px 50px;
+    font-size: 14px;
+    color: #868484;
+}
+.contaniner1 {
+    width: 90%;
+    margin: auto;
+}
+.music-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
+.music-box .text p {
+    margin: 5px 30px 5px 10px;
+}
+.music-box .text p:first-child {
+    color: var(--main-color);
+    font-weight: 700;
+}
+.music-box .text p:last-child {
+    font-size: 15px;
+}
+.contaniner1 .payment {
+    width: 285px;
+    margin: 10px 15px;
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: #8954e6;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px 0px #cfd6eb;
+}
+.music-box .change {
+    display: block;
+    margin-left: 18px;
+    border: none;
+    color: #8954e6;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+.cancel {
+    margin: 30px !important;
+    color: var(--main-color) !important;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
